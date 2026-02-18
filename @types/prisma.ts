@@ -4,5 +4,3 @@ export type ProductWithRelations = Product & {
   items: ProductItem[];
   ingredients: Ingredient[];
 };
-
-
