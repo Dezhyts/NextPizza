@@ -41,7 +41,7 @@ export const Stories = ({ className }: StoriesProps) => {
 
   return (
     <Container
-      className={cn('flex items-center gap-2 my-10 justify-between', className)}
+      className={cn('flex items-center justify-between  my-10', className)}
     >
       {stories.length === 0 &&
         [...Array(6)].map((_, index) => (
@@ -64,7 +64,7 @@ export const Stories = ({ className }: StoriesProps) => {
 
       {open && (
         <div
-          className="flex justify-center items-center z-30 w-full h-full bg-black/80 fixed left-0 top-0"
+          className="flex gap-2 justify-between  items-center z-30 w-full h-full bg-black/80 fixed left-0 top-0"
           onClick={handleOverlayClick}
         >
           <div className="relative" style={{ width: 520 }}>
