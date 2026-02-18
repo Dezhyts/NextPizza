@@ -17,7 +17,7 @@ interface ChoosePizzaFormProps {
   items: ProductItem[];
   className?: string;
   onSubmit: (itemId: number, ingredients: number[]) => void;
-  loading: boolean;
+  loading?: boolean;
 }
 // Форма выбора пиццы
 export const ChoosePizzaForm = ({
